@@ -127,65 +127,33 @@ export const SkillHighlights = () => {
             </div>
 
             <h3>Languages, Libraries and Frameworks</h3>
-
             <div className={"languages-container"}>
                 <div className={"languages"}>
                     <div className={"language"}>
-                        <Grid container spacing={1}>
-                            <Grid item xs={2} sm={2} md={2} lg={2}>
-                                <img src={require("../resources/python.png")} className={"language-logo"}/>
-                            </Grid>
-                            <Grid item  xs={10} sm={10} md={10} lg={10}>
-                                <div className={"language-name"}>
-                                    Python
-                                </div>
-                            </Grid>
-                        </Grid>
+                        <img src={require("../resources/python.png")} className={"language-logo"}/>
+                        <p>Python</p>
                     </div>
 
                     <div className={"language"}>
-                        <Grid container spacing={1}>
-                            <Grid item xs={2} sm={2} md={2} lg={2}>
-                                <img src={require("../resources/java.png")} className={"language-logo"}/>
-                            </Grid>
-                            <Grid item  xs={10} sm={10} md={10} lg={10}>
-                                <div className={"language-name"}>
-                                    Java
-                                </div>
-                            </Grid>
-                        </Grid>
+                        <img src={require("../resources/java.png")} className={"language-logo"}/>
+                        <p>Java</p>
                     </div>
 
                     <div className={"language"}>
-                        <Grid container spacing={1}>
-                            <Grid item xs={2} sm={2} md={2} lg={2}>
-                                <img src={require("../resources/js.png")} className={"language-logo"}/>
-                            </Grid>
-                            <Grid item  xs={10} sm={10} md={10} lg={10}>
-                                <div className={"language-name"}>
-                                    Java Script
-                                </div>
-                            </Grid>
-                        </Grid>
+                        <img src={require("../resources/js.png")} className={"language-logo"}/>
+                        <p>Java Script</p>
                     </div>
 
                     <div className={"language"}>
-                        <Grid container spacing={1}>
-                            <Grid item xs={6} sm={6} md={6} lg={6}>
-                                <img src={require("../resources/mysql.png")} className={"language-logo"}/>
-                            </Grid>
-                            <Grid item  xs={6} sm={6} md={6} lg={6}>
-                                <div className={"language-name"}>
-                                    SQL (MySql)
-                                </div>
-                            </Grid>
-                        </Grid>
+                        <img src={require("../resources/mysql.png")} className={"language-logo"}/>
+                        <p>MySQL</p>
                     </div>
 
+                    <div className={"language"}>
+                        <img src={require("../resources/react.png")} className={"language-logo"}/>
+                        <p>React</p>
+                    </div>
 
-                </div>
-                <div className={"frameworks"}>
-                    jajjaja
                 </div>
             </div>
         </div>

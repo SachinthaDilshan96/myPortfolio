@@ -2,11 +2,12 @@
     height: 100%;
     width: 100%;
     color: white;
+    background-color: #34495e;
 }
 
 .left{
-    background-color: #34495e;
+
 }
 .right{
-    background-color: black;
+    overflow: auto;
 }

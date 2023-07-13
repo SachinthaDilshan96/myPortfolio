@@ -1,0 +1,12 @@
+.main-div{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.left{
+    background-color: #34495e;
+}
+.right{
+    background-color: black;
+}

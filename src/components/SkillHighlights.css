@@ -1,0 +1,53 @@
+.skill-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.left{
+}
+
+.right{
+
+}
+.skill{
+    padding: 5px;
+}
+.skill:hover{
+    background-color: #f39c12;
+    scale: 1.2;
+}
+.skill-name{
+    text-align: left;
+    align-content: flex-start
+}
+
+/*
+Languages section
+*/
+.languages-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.languages{
+
+}
+
+.language{
+    padding: 10px;
+}
+.language:hover{
+    background-color: #f39c12;
+    scale: 1.2;
+}
+.frameworks{
+
+}
+.language-logo{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+.language-name{
+    text-align: left;
+}

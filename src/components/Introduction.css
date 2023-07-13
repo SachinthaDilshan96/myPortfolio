@@ -1,0 +1,22 @@
+.main-div{
+
+}
+
+.introduction-para{
+    text-align: center;
+}
+.quotes{
+    font-size: 30px;
+}
+.user-image{
+    height: 75px;
+    width: 75px;
+}
+.links{
+    list-style-type: none;
+    text-align: left;
+}
+.links>li>a{
+    color: white;
+    text-decoration: none;
+}

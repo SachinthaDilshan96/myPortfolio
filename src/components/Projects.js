@@ -58,13 +58,15 @@ export const Projects = () => {
                         the lowest RSS was given by RF.</p>
                 </div>
 
-                <div className={"project"}>
-                    <h3>Predict Potential Spammers on Fiverr (Kaggle Competition)</h3>
-                    <p className={"project-description"}>This project was done as submission for the Kaggle Competition to <a target={"_blank"} href={"https://www.kaggle.com/competitions/predict-potential-spammers-on-fiverr"}>Predict Potential Spammers on Fiverr. </a>
-                        Random Forest and XGB Classifier were used to predict the
-                        spam behavior and 98% score could be achieved for the final submission. My
-                        submission was ranked for 87th place from all the competitors around the world.</p>
-                </div>
+                <section className={"spam"}>
+                    <div className={"project"}>
+                        <h3>Predict Potential Spammers on Fiverr (Kaggle Competition)</h3>
+                        <p className={"project-description"}>This project was done as submission for the Kaggle Competition to <a target={"_blank"} href={"https://www.kaggle.com/competitions/predict-potential-spammers-on-fiverr"}>Predict Potential Spammers on Fiverr. </a>
+                            Random Forest and XGB Classifier were used to predict the
+                            spam behavior and 98% score could be achieved for the final submission. My
+                            submission was ranked for 87th place from all the competitors around the world.</p>
+                    </div>
+                </section>
             </div>
        </div>
     )

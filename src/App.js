@@ -5,16 +5,17 @@ import {useState} from "react";
 import {Education} from "./components/Education";
 import {Experience} from "./components/Experience";
 import {SkillHighlights} from "./components/SkillHighlights";
-
-
+import {BsStackOverflow} from "react-icons/bs"
+import {FaKaggle} from "react-icons/fa"
+import {MdEmail} from "react-icons/md"
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   return (
-      <div className={darkMode?"dark":""}>
-        <main className={"bg-white px-10 md:px-20 lg:px-40 "}>
+      <div className={""}>
+        <main className={"bg-black px-10 md:px-20 lg:px-40 "}>
           <section className={"min-h-screen py-10"}>
             <nav className={"py-15 mb-12 flex justify-between"}>
-              <h1 className={"text-xl"}>Developed by Sachintha </h1>
+              <h1 className={"text-xl text-white"}>Developed by Sachintha </h1>
               <ul className={"flex items-center"}>
                 <li>
                   <BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} className={"cursor-pointer text-2xl "}/>
@@ -27,8 +28,8 @@ function App() {
 
             <div className={"text-center p-10"}>
               <h2 className={"text-5xl py-2 text-teal-600 font-medium"}>Sachintha Dilshan</h2>
-              <h3 className={"text-2xl py-2 dark:text-white"}>Software Engineer</h3>
-              <p className={"text-md py-5 leading-8 text-gray-800 "}>
+              <h3 className={"text-2xl py-2 text-white"}>Software Engineer</h3>
+              <p className={"text-md py-5 leading-8 text-white "}>
                 I’m a self-motivated, forward-looking fresh graduate specialised in statistics and computer
                 science streams, from University of Colombo and University of Moratuwa. I’m very much
                 interested in software development, machine learning and data science domains. I do like
@@ -38,16 +39,25 @@ function App() {
               </p>
             </div>
 
-            <div className={"text-5xl flex justify-center gap-16 py-3 text-gray-600"}>
+            <div className={"text-5xl flex justify-center gap-16 py-3 text-white"}>
+              <a href={"mailto:sachinthadilshan96@gmail.com"} target={"_blank"}>
+                <MdEmail className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
+
               <a href={"https://twitter.com/Sachinthadil96"} target={"_blank"}>
                 <AiFillTwitterCircle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
               </a>
               <a href={"https://www.linkedin.com/in/sachintha-dilshan96/"} target={"_blank"}>
                 <AiFillLinkedin className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
               </a>
-
               <a href={"https://github.com/SachinthaDilshan96"} target={"_blank"}>
                 <AiFillGithub className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
+              <a href={"https://stackoverflow.com/users/17039223/sachintha-dilshan"} target={"_blank"}>
+                <BsStackOverflow className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
+              <a href={"https://www.kaggle.com/sachinthadilshan"} target={"_blank"}>
+                <FaKaggle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
               </a>
             </div>
 
@@ -58,7 +68,7 @@ function App() {
 
           <section>
             <div className={"text-center"}>
-              <h3 className={"text-3xl py-1"}>Education</h3>
+              <h3 className={"text-3xl py-1 text-white"}>Education</h3>
               <div className={"flex h-[350px] gap-10 mx-auto justify-evenly "}>
                 <div className={"w-1/2 "}>
                   <Education props={{degree: 'BSc. (Hon’s) in Statistics and Computer Science',uni:'University of Colombo',period:'(2018-2022)',logo:require('../src/resources/uoc.png')}}/>
@@ -72,7 +82,7 @@ function App() {
 
           <section className={"w-full"}>
             <div className={"text-center  w-full"}>
-              <h3 className={"text-3xl py-1"}>Skill Highlights</h3>
+              <h3 className={"text-3xl text-white py-1"}>Skill Highlights</h3>
               <div className={"w-full"}>
                 <SkillHighlights/>
               </div>
@@ -81,7 +91,7 @@ function App() {
 
           <section>
             <div className={"text-center my-4"}>
-              <h3 className={"text-3xl py-1"}> Experiences</h3>
+              <h3 className={"text-3xl text-white py-1"}> Experiences</h3>
               <div className={"my-5"}>
                 <Experience/>
               </div>
@@ -90,7 +100,7 @@ function App() {
 
           <section>
             <div className={"text-center"}>
-              <h3 className={"text-3xl py-1"}>Projects</h3>
+              <h3 className={"text-3xl text-white py-1"}>Projects</h3>
               <div className={"flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"}>
                 <div className={"basis-1/4 flex-1"}>
                   <img  className={"m-auto rounded-lg object-cover"} width={'100%'} height={'100%'} layout={"responsive"} src={require("./resources/java.png")} alt={"user"}/>

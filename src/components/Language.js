@@ -7,7 +7,7 @@ export const Language=({props})=>{
                <img src={props.image} className={"w-[100px] h-[100px] mx-auto my-2"} alt={"language"}/>
            </div>
            <div >
-               <h2 className={"text-2xl font-bold py-1"}>{props.language}</h2>
+               <h2 className={"text-2xl text-white font-bold py-1"}>{props.language}</h2>
            </div>
            <hr/>
            <div className={"justify-center"}>

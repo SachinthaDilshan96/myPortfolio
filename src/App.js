@@ -48,13 +48,13 @@ function App() {
               </section>
 
               <section>
-                  <div>
+                  <div >
                       <h3 className={"text-3xl py-1"}>Education</h3>
-                      <div className={"flex gap-10 mx-auto justify-evenly bg-green-100"}>
-                          <div className={"w-1/2 h-full"}>
+                      <div className={"flex h-[350px] gap-10 mx-auto justify-evenly "}>
+                          <div className={"w-1/2 h-[350px]"}>
                               <Education props={{degree: 'BSc. (Hon’s) in Statistics and Computer Science',uni:'University of Colombo',period:'(2018-2022)',logo:require('../src/resources/uoc.png')}}/>
                           </div>
-                          <div className={"w-1/2 h-full"}>
+                          <div className={"w-1/2"}>
                               <Education props={{degree: 'BIT (External)',uni:'University of Moratuwa',period:'(2018-2021)',logo:require('../src/resources/moratuwa.png')}}/>
                           </div>
                       </div>

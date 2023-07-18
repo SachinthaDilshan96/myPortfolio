@@ -39,9 +39,16 @@ function App() {
             </div>
 
             <div className={"text-5xl flex justify-center gap-16 py-3 text-gray-600"}>
-              <AiFillTwitterCircle className={"dark:bg-white "}/>
-              <AiFillLinkedin/>
-              <AiFillGithub/>
+              <a href={"https://twitter.com/Sachinthadil96"} target={"_blank"}>
+                <AiFillTwitterCircle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
+              <a href={"https://www.linkedin.com/in/sachintha-dilshan96/"} target={"_blank"}>
+                <AiFillLinkedin className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
+
+              <a href={"https://github.com/SachinthaDilshan96"} target={"_blank"}>
+                <AiFillGithub className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+              </a>
             </div>
 
             <div className={"relative bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 mx-auto"}>
@@ -63,17 +70,17 @@ function App() {
             </div>
           </section>
 
-          <section>
-            <div className={"text-center"}>
+          <section className={"w-full"}>
+            <div className={"text-center  w-full"}>
               <h3 className={"text-3xl py-1"}>Skill Highlights</h3>
-              <div>
+              <div className={"w-full"}>
                 <SkillHighlights/>
               </div>
             </div>
           </section>
 
           <section>
-            <div className={"text-center"}>
+            <div className={"text-center my-4"}>
               <h3 className={"text-3xl py-1"}> Experiences</h3>
               <div className={"my-5"}>
                 <Experience/>

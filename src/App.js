@@ -2,6 +2,7 @@ import './App.css';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {AiFillTwitterCircle,AiFillLinkedin,AiFillGithub} from "react-icons/ai";
 import {useState} from "react";
+import {Education} from "./components/Education";
 
 
 function App() {
@@ -49,17 +50,12 @@ function App() {
               <section>
                   <div>
                       <h3 className={"text-3xl py-1"}>Education</h3>
-                      <div className={"flex gap-10 mx-auto justify-evenly"}>
-                          <div className={"text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white"}>
-                              <h3 className={"text-md py-2 leading-8 text-gray-800"}>BSc. (Hon’s) in Statistics and Computer Science</h3>
-                              <h4>University of Colombo.</h4>
-                              <h5>(2018-2022)</h5>
+                      <div className={"flex gap-10 mx-auto justify-evenly bg-green-100"}>
+                          <div className={"w-1/2 h-full"}>
+                              <Education props={{degree: 'BSc. (Hon’s) in Statistics and Computer Science',uni:'University of Colombo',period:'(2018-2022)',logo:require('../src/resources/uoc.png')}}/>
                           </div>
-
-                          <div className={"text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white"}>
-                              <h3 className={"text-md py-2 leading-8 text-gray-800"}>BIT (External)</h3>
-                              <h4>University of Moratuwa.</h4>
-                              <h5>(2018-2021)</h5>
+                          <div className={"w-1/2 h-full"}>
+                              <Education props={{degree: 'BIT (External)',uni:'University of Moratuwa',period:'(2018-2021)',logo:require('../src/resources/moratuwa.png')}}/>
                           </div>
                       </div>
                   </div>

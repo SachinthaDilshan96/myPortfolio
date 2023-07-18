@@ -3,6 +3,9 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {AiFillTwitterCircle,AiFillLinkedin,AiFillGithub} from "react-icons/ai";
 import {useState} from "react";
 import {Education} from "./components/Education";
+import {Experience} from "./components/Experience";
+import {SkillHighlights} from "./components/SkillHighlights";
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -63,12 +66,18 @@ function App() {
           <section>
             <div className={"text-center"}>
               <h3 className={"text-3xl py-1"}>Skill Highlights</h3>
+              <div>
+                <SkillHighlights/>
+              </div>
             </div>
           </section>
 
           <section>
             <div className={"text-center"}>
               <h3 className={"text-3xl py-1"}> Experiences</h3>
+              <div className={"my-5"}>
+                <Experience/>
+              </div>
             </div>
           </section>
 

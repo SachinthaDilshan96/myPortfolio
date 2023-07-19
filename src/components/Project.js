@@ -15,14 +15,14 @@ export const Project=({props})=>{
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
         p: 4,
     };
+
     return(
-        <div className={"border-solid border-2 border-sky-500 hover:bg-slate-800 hover:scale-110 transition duration-700"}>
+        <div className={"border-solid h-[375px] border-2 border-sky-500 hover:bg-slate-800 hover:scale-110 transition duration-700"}>
             <div>
                 <img src={props.image} className={"w-[100px] h-[100px] mx-auto my-2"} alt={"project"}/>
             </div>
@@ -46,12 +46,21 @@ export const Project=({props})=>{
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                             <p className={"text-center"}>{props.description}</p>
                         </Typography>
-                        <div>
+                        <div className={"flex"}>
+                            <div className={"p-2"}><h2 className={""}>Links : &nbsp;</h2></div>
                             {
-                                console.log(props.links)
-                                //const keys = Object.keys(props.links);
+                                Object.keys(props.links).map((l)=>{
+                                    return(
+                                        <div className={"p-2 hover:bg-blue-300"}>
+                                            <h2>
+                                                <a className={"text-rose-600"} href={props.links[l]} target={"_blank"}>{l}</a>
+                                            </h2>
+                                        </div>
+                                    )
+                                })
                             }
                         </div>
+                        <h2 className={""}>Tags : &nbsp;</h2>
                         <div className={"justify-center"}>
                             <ProjectLanguage languages={props.languages} isAll={true}/>
                         </div>

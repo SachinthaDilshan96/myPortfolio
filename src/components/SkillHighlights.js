@@ -7,6 +7,7 @@ export const SkillHighlights = () => {
     return (
         <div className={"w-full"}>
             <h1 className={"text-2xl w-full text-white py-1"}>Areas</h1>
+
             <div className={"flex w-full justify-evenly"}>
                 {areas.map((a) =>
                     <Area key={a} area={a}  />

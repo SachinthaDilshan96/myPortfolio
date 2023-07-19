@@ -118,11 +118,11 @@ function App() {
                 <div className={"basis-1/4 flex-1"}>
                   <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"Construct an AI based stock market index – Final year\n" +
                               "Research (UoC)",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/python.png"),
                           languages:['Python','Matplolib','Keras','NLP','DeepLearning'],
                           description:'A new stock market index for the CSE was constructed using AI based techniques\n' +
                               'such as NLP, sentiment analysis and neural networks. The new index was free float\n' +
@@ -130,24 +130,24 @@ function App() {
                               'programming language. This research has been published on SLAAS Annual\n' +
                               'sessions 2022',
                           links:{
-                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git",
-                          SLAASAnnualJournal: "https://www.slaas.lk/images/annual_sessions/proceedings/Part_I_Abstracts_2022_SLAAS.pdf"},
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git",
+                          "SLAAS Annual Journal": "https://www.slaas.lk/images/annual_sessions/proceedings/Part_I_Abstracts_2022_SLAAS.pdf"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"A Web platform with multiple online Tools – Tools Master",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/react.png"),
                           languages:['React','JS','Tailwind CSS','NLP','API'],
                           description:"This project was developed based on my own idea. Tools Master is a free online platform with " +
                               "multiple online tools. At the moment it consists with multiple video downloaders, paraphrasing tool and a summarization tool. All these are API based tools and platform was developed using React and tailwind CSS.",
                           links:{
-                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/ToolsMaster.git","Site Link":"https://toolsmasteronline.com/"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"MyShopApp - A simple customer management System",
                           image:require("./resources/java.png"),
@@ -156,14 +156,14 @@ function App() {
                               "was used as the database. OOP concepts and SOLID principles were applied where necessary. Layered architecture was used in " +
                               "the project and CRUD operations for customers, items and users were implemented using JDBC.",
                           links:{
-                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/MyShopApp"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"Predicting COVID-19 using ML and implement it as a mobile app.",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/python.png"),
                           languages:['JS','ReactNative','Python','ML','MobileApp'],
                           description:'Symptoms and COVID Presence data set was used to predict the presence of\n' +
                               'COVID19 using ML. Python language was used to construct the model and\n' +
@@ -171,47 +171,49 @@ function App() {
                               'SVM, RF, ANN and XGB algorithms were used to model the dataset and XGB\n' +
                               'could predict the presence of COVID19 around 90% of success.',
                           links:{
-                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                          "Data Set":"https://www.kaggle.com/datasets/hemanthhari/symptoms-and-covid-presence",
+                            "Kaggle Notebook":"https://www.kaggle.com/code/sachinthadilshan/notebookcb7e0a5759/notebook",
+                          "Mobile App":"https://SachinthaDilshan96@bitbucket.org/SachinthaDilshan96/symptomate/src/master/"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"Heart disease prediction using ML",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/python.png"),
                           languages:['Python','Machine Learning','Classification'],
                           description:'The Cardiovascular dataset was used to predict the heart disease using ML. Logistic\n' +
                               'regression, RF, XGB and DT were used to model the dataset. Python Language was\n' +
                               'used for the project and could achieve an accuracy around 90%.',
                           links:{
-                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                          "Kaggle Notebook":"https://www.kaggle.com/code/sachinthadilshan/notebookca443ee6a4"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"Predicting True value of cars",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/python.png"),
                           languages:['Python','Machine Learning','Regression'],
                           description:'A data set with car options and prices was used to construct a ML model to predict\n' +
                               'the price of a used car. Linear regression, RF and many other models were used and\n' +
                               'the lowest RSS was given by RF.',
                           links:{
-                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                          "Kaggle Notebook":"https://www.kaggle.com/code/sachinthadilshan/notebookdd591de8c1/data"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6}>
+                      <Grid item xs={6} md={4}>
                         <Project props={{
                           title:"Predict Potential Spammers on Fiverr (Kaggle Competition)",
-                          image:require("./resources/java.png"),
+                          image:require("./resources/python.png"),
                           languages:['Python','Machine Learning','Kaglle Competition'],
                           description:'This project was done as submission for the Kaggle Competition of Predict Potential\n' +
                               'Spammers on Fiverr. Random Forest and XGB Classifier were used to predict the\n' +
                               'spam behavior and 98% score could be achieved for the final submission. My\n' +
                               'submission was ranked for 87th place from all the competitors around the world.',
                           links:{
-                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                          "Kaggle Notebook":"https://www.kaggle.com/competitions/predict-potential-spammers-on-fiverr"},
                         }}/>
                       </Grid>
 

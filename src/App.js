@@ -132,9 +132,9 @@ function App() {
 
           <section>
             <div className={"text-center my-4"}>
-              <h3 className={"text-3xl text-white py-1"}> Blog Articles</h3>
+              <h3 className={"text-3xl text-white py-1"}> Blog Article</h3>
               <div className={"my-5"}>
-
+                fhfhf
               </div>
             </div>
           </section>

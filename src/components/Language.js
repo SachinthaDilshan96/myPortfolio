@@ -11,7 +11,7 @@ export const Language=({props})=>{
            </div>
            <hr/>
            <div className={"justify-center"}>
-               <Library libs={props.libraries}/>
+               <Library languages={props.libraries}/>
            </div>
        </div>
     )

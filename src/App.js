@@ -5,10 +5,14 @@ import {useState} from "react";
 import {Education} from "./components/Education";
 import {Experience} from "./components/Experience";
 import {SkillHighlights} from "./components/SkillHighlights";
+import {Project} from "./components/Project";
 import {BsStackOverflow} from "react-icons/bs"
 import {FaKaggle} from "react-icons/fa"
 import {MdEmail} from "react-icons/md";
 import Typewriter from "typewriter-effect";
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -112,19 +116,107 @@ function App() {
               <h3 className={"text-3xl text-white py-1"}>Projects</h3>
               <div className={"flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"}>
                 <div className={"basis-1/4 flex-1"}>
-                  <img  className={"m-auto rounded-lg object-cover"} width={'100%'} height={'100%'} layout={"responsive"} src={require("./resources/java.png")} alt={"user"}/>
-                </div>
+                  <Box sx={{ flexGrow: 1 }}>
+                    <Grid container spacing={2}>
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"Construct an AI based stock market index – Final year\n" +
+                              "Research (UoC)",
+                          image:require("./resources/java.png"),
+                          languages:['Python','Matplolib','Keras','NLP','DeepLearning'],
+                          description:'A new stock market index for the CSE was constructed using AI based techniques\n' +
+                              'such as NLP, sentiment analysis and neural networks. The new index was free float\n' +
+                              'adjusted to better reflect the stock market behaviour. The Python was used as the\n' +
+                              'programming language. This research has been published on SLAAS Annual\n' +
+                              'sessions 2022',
+                          links:{
+                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git",
+                          SLAASAnnualJournal: "https://www.slaas.lk/images/annual_sessions/proceedings/Part_I_Abstracts_2022_SLAAS.pdf"},
+                        }}/>
+                      </Grid>
 
-                <div className={"basis-1/4 flex-1"}>
-                  <img  className={"m-auto rounded-lg object-cover"}width={'100%'}  height={'100%'} layout={"responsive"} src={require("./resources/java.png")} alt={"user"}/>
-                </div>
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"A Web platform with multiple online Tools – Tools Master",
+                          image:require("./resources/java.png"),
+                          languages:['React','JS','Tailwind CSS','NLP','API'],
+                          description:"This project was developed based on my own idea. Tools Master is a free online platform with " +
+                              "multiple online tools. At the moment it consists with multiple video downloaders, paraphrasing tool and a summarization tool. All these are API based tools and platform was developed using React and tailwind CSS.",
+                          links:{
+                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
 
-                <div className={"basis-1/4 flex-1"}>
-                  <img  className={"m-auto rounded-lg object-cover"} width={'100%'} height={'100%'} layout={"responsive"} src={require("./resources/java.png")} alt={"user"}/>
-                </div>
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"MyShopApp - A simple customer management System",
+                          image:require("./resources/java.png"),
+                          languages:['Java','JavaFX','MySql','OOP','Layered Architecture','JDBC'],
+                          description:"This project was implemented using Java and MySql database. The System's UI was developed using JavaFX and MySql " +
+                              "was used as the database. OOP concepts and SOLID principles were applied where necessary. Layered architecture was used in " +
+                              "the project and CRUD operations for customers, items and users were implemented using JDBC.",
+                          links:{
+                            GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
 
-                <div className={"basis-1/4 flex-1"}>
-                  <img  className={"m-auto rounded-lg object-cover"} width={'100%'}  height={'100%'} layout={"responsive"} src={require("./resources/java.png")} alt={"user"}/>
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"Predicting COVID-19 using ML and implement it as a mobile app.",
+                          image:require("./resources/java.png"),
+                          languages:['JS','ReactNative','Python','ML','MobileApp'],
+                          description:'Symptoms and COVID Presence data set was used to predict the presence of\n' +
+                              'COVID19 using ML. Python language was used to construct the model and\n' +
+                              'practically implemented it using a mobile app which was developed using reactnative.\n' +
+                              'SVM, RF, ANN and XGB algorithms were used to model the dataset and XGB\n' +
+                              'could predict the presence of COVID19 around 90% of success.',
+                          links:{
+                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
+
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"Heart disease prediction using ML",
+                          image:require("./resources/java.png"),
+                          languages:['Python','Machine Learning','Classification'],
+                          description:'The Cardiovascular dataset was used to predict the heart disease using ML. Logistic\n' +
+                              'regression, RF, XGB and DT were used to model the dataset. Python Language was\n' +
+                              'used for the project and could achieve an accuracy around 90%.',
+                          links:{
+                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
+
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"Predicting True value of cars",
+                          image:require("./resources/java.png"),
+                          languages:['Python','Machine Learning','Regression'],
+                          description:'A data set with car options and prices was used to construct a ML model to predict\n' +
+                              'the price of a used car. Linear regression, RF and many other models were used and\n' +
+                              'the lowest RSS was given by RF.',
+                          links:{
+                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
+
+                      <Grid item xs={6}>
+                        <Project props={{
+                          title:"Predict Potential Spammers on Fiverr (Kaggle Competition)",
+                          image:require("./resources/java.png"),
+                          languages:['Python','Machine Learning','Kaglle Competition'],
+                          description:'This project was done as submission for the Kaggle Competition of Predict Potential\n' +
+                              'Spammers on Fiverr. Random Forest and XGB Classifier were used to predict the\n' +
+                              'spam behavior and 98% score could be achieved for the final submission. My\n' +
+                              'submission was ranked for 87th place from all the competitors around the world.',
+                          links:{
+                          GITRepo:"https://github.com/SachinthaDilshan96/AIBasedStockMarketIndex.git"},
+                        }}/>
+                      </Grid>
+
+                    </Grid>
+                  </Box>
                 </div>
               </div>
             </div>

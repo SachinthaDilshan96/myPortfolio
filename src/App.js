@@ -7,7 +7,9 @@ import {Experience} from "./components/Experience";
 import {SkillHighlights} from "./components/SkillHighlights";
 import {BsStackOverflow} from "react-icons/bs"
 import {FaKaggle} from "react-icons/fa"
-import {MdEmail} from "react-icons/md"
+import {MdEmail} from "react-icons/md";
+import Typewriter from "typewriter-effect";
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   return (
@@ -34,8 +36,15 @@ function App() {
                 science streams, from University of Colombo and University of Moratuwa. I’m very much
                 interested in software development, machine learning and data science domains. I do like
                 to explore new technologies and love learn while supporting others. I’m seeking for an
-                opportunity to prove my skills within the industry and improve my skills with the industry
-                knowledge.
+                opportunity to prove my skills within the industry and improve my skills with
+                <Typewriter
+                    options={{
+                      strings: ['the industry knowledge.'],
+                      autoStart: true,
+                      loop: true,
+                      pauseFor:1000
+                    }}
+              />
               </p>
             </div>
 
@@ -120,6 +129,17 @@ function App() {
               </div>
             </div>
           </section>
+
+          <section>
+            <div className={"text-center my-4"}>
+              <h3 className={"text-3xl text-white py-1"}> Blog Articles</h3>
+              <div className={"my-5"}>
+
+              </div>
+            </div>
+          </section>
+
+
         </main>
       </div>
   );

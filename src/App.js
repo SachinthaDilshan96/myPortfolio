@@ -16,18 +16,30 @@ import Box from '@mui/material/Box';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const download=()=>{
+    fetch('./resources/SachinthaDilshan_CV.pdf')
+        .then(response => {
+      response.blob().then(blob => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'SachinthaDilshan_CV.pdf';
+        alink.click();
+      })
+    })
+  }
   return (
       <div className={""}>
         <main className={"bg-black px-10 md:px-20 lg:px-40 "}>
           <section className={"min-h-screen py-10"}>
             <nav className={"py-15 mb-12 flex justify-between"}>
-              <h1 className={"text-xl text-white"}>Developed by Sachintha </h1>
+              <h1 className={"text-xl text-white"}>Developed by Sachintha Dilshan</h1>
               <ul className={"flex items-center"}>
                 <li>
                   <BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} className={"cursor-pointer text-2xl "}/>
                 </li>
                 <li>
-                  <a className={"bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-4  rounded-md ml-8"} href={"/"}>Resume</a>
+                  <a onClick={download} className={"bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-4  rounded-md ml-8"} href={"/"}>Download Resume</a>
                 </li>
               </ul>
             </nav>
@@ -52,26 +64,46 @@ function App() {
               </p>
             </div>
 
-            <div className={"text-5xl flex justify-center gap-16 py-3 text-white"}>
-              <a href={"mailto:sachinthadilshan96@gmail.com"} target={"_blank"}>
-                <MdEmail className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
+            <div className={"text-5xl flex justify-center align-middle gap-16 py-3 text-white"}>
+              <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={2} md={2}>
+                    <a href={"mailto:sachinthadilshan96@gmail.com"} target={"_blank"}>
+                      <MdEmail className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
 
-              <a href={"https://twitter.com/Sachinthadil96"} target={"_blank"}>
-                <AiFillTwitterCircle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
-              <a href={"https://www.linkedin.com/in/sachintha-dilshan96/"} target={"_blank"}>
-                <AiFillLinkedin className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
-              <a href={"https://github.com/SachinthaDilshan96"} target={"_blank"}>
-                <AiFillGithub className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
-              <a href={"https://stackoverflow.com/users/17039223/sachintha-dilshan"} target={"_blank"}>
-                <BsStackOverflow className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
-              <a href={"https://www.kaggle.com/sachinthadilshan"} target={"_blank"}>
-                <FaKaggle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
-              </a>
+                  <Grid item xs={2} md={2}>
+                    <a href={"https://twitter.com/Sachinthadil96"} target={"_blank"}>
+                      <AiFillTwitterCircle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
+
+                  <Grid item xs={2} md={2}>
+                    <a href={"https://www.linkedin.com/in/sachintha-dilshan96/"} target={"_blank"}>
+                      <AiFillLinkedin className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
+
+                  <Grid item xs={2} md={2}>
+                    <a href={"https://github.com/SachinthaDilshan96"} target={"_blank"}>
+                      <AiFillGithub className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
+
+                  <Grid item xs={2} md={2}>
+                    <a href={"https://stackoverflow.com/users/17039223/sachintha-dilshan"} target={"_blank"}>
+                      <BsStackOverflow className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
+
+                  <Grid item xs={2} md={2}>
+                    <a href={"https://www.kaggle.com/sachinthadilshan"} target={"_blank"}>
+                      <FaKaggle className={"hover:cursor-pointer hover:scale-125 transition duration-700 "}/>
+                    </a>
+                  </Grid>
+                </Grid>
+              </Box>
             </div>
 
             <div className={"relative bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 mx-auto"}>
@@ -82,14 +114,19 @@ function App() {
           <section>
             <div className={"text-center"}>
               <h3 className={"text-3xl py-1 text-white"}>Education</h3>
-              <div className={"flex h-[350px] gap-10 mx-auto justify-evenly "}>
-                <div className={"w-1/2 "}>
-                  <Education props={{degree: 'BSc. (Hon’s) in Statistics and Computer Science',uni:'University of Colombo',period:'(2018-2022)',logo:require('../src/resources/uoc.png')}}/>
-                </div>
-                <div className={"w-1/2"}>
-                  <Education props={{degree: 'BIT (External)',uni:'University of Moratuwa',period:'(2018-2021)',logo:require('../src/resources/moratuwa.png')}}/>
-                </div>
-              </div>
+              <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6}>
+                    <Education props={{degree: 'BSc. (Hon’s) in Statistics and Computer Science',uni:'University of Colombo',period:'(2018-2022)',logo:require('../src/resources/uoc.png')}}/>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Education props={{degree: 'BIT (External)',uni:'University of Moratuwa',period:'(2018-2021)',logo:require('../src/resources/moratuwa.png')}}/>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Education props={{degree: 'Comprehensive Master Java Developer Course',uni:'IJSE',period:'(2023)',logo:require('../src/resources/ijse.png')}}/>
+                  </Grid>
+                </Grid>
+              </Box>
             </div>
           </section>
 

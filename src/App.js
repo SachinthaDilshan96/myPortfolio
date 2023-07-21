@@ -118,7 +118,7 @@ function App() {
                 <div className={"basis-1/4 flex-1"}>
                   <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"Construct an AI based stock market index – Final year\n" +
                               "Research (UoC)",
@@ -135,7 +135,7 @@ function App() {
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"A Web platform with multiple online Tools – Tools Master",
                           image:require("./resources/react.png"),
@@ -147,7 +147,7 @@ function App() {
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"MyShopApp - A simple customer management System",
                           image:require("./resources/java.png"),
@@ -160,7 +160,7 @@ function App() {
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"Predicting COVID-19 using ML and implement it as a mobile app.",
                           image:require("./resources/python.png"),
@@ -172,12 +172,13 @@ function App() {
                               'could predict the presence of COVID19 around 90% of success.',
                           links:{
                           "Data Set":"https://www.kaggle.com/datasets/hemanthhari/symptoms-and-covid-presence",
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/PredictingCovidUsingML.git",
                             "Kaggle Notebook":"https://www.kaggle.com/code/sachinthadilshan/notebookcb7e0a5759/notebook",
                           "Mobile App":"https://SachinthaDilshan96@bitbucket.org/SachinthaDilshan96/symptomate/src/master/"},
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"Heart disease prediction using ML",
                           image:require("./resources/python.png"),
@@ -190,7 +191,7 @@ function App() {
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"Predicting True value of cars",
                           image:require("./resources/python.png"),
@@ -203,7 +204,7 @@ function App() {
                         }}/>
                       </Grid>
 
-                      <Grid item xs={6} md={4}>
+                      <Grid item xs={12} md={4}>
                         <Project props={{
                           title:"Predict Potential Spammers on Fiverr (Kaggle Competition)",
                           image:require("./resources/python.png"),

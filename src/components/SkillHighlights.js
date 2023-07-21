@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 
 
 export const SkillHighlights = () => {
-    const areas =["Mathematics","Statistics","Data Visualization","Machine Learning","Deep Learning","NLP","Software Development","Data Base"];
+    const areas =["Mathematics","Statistics","Data Visualization","Machine Learning","Deep Learning","NLP","Software Development","Data Base","Version Controlling"];
 
     return (
         <div className={"w-full"}>

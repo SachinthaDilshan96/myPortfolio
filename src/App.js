@@ -4,6 +4,7 @@ import {AiFillTwitterCircle,AiFillLinkedin,AiFillGithub} from "react-icons/ai";
 import {useState} from "react";
 import {Education} from "./components/Education";
 import {Experience} from "./components/Experience";
+import {Blogs} from "./components/Blogs";
 import {SkillHighlights} from "./components/SkillHighlights";
 import {Project} from "./components/Project";
 import {BsStackOverflow} from "react-icons/bs"
@@ -12,7 +13,7 @@ import {MdEmail} from "react-icons/md";
 import Typewriter from "typewriter-effect";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-
+import PDF from "./resources/SachinthaDilshan_CV.pdf"
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -31,7 +32,8 @@ function App() {
   return (
       <div className={""}>
         <main className={"bg-black px-10 md:px-20 lg:px-40 "}>
-          <section className={"min-h-screen py-10"}>
+
+          <section className={"min-h-screen py-10 w-100vW h-100vh"}>
             <nav className={"py-15 mb-12 flex justify-between"}>
               <h1 className={"text-xl text-white"}>Developed by Sachintha Dilshan</h1>
               <ul className={"flex items-center"}>
@@ -39,7 +41,11 @@ function App() {
                   <BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} className={"cursor-pointer text-2xl "}/>
                 </li>
                 <li>
-                  <a onClick={download} className={"bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-4  rounded-md ml-8"} href={"/"}>Download Resume</a>
+                  <a className={"bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-4  rounded-md ml-8"}
+                     target="_blank"
+                     rel="noreferrer"
+                     href={PDF}>
+                    Download Resume</a>
                 </li>
               </ul>
             </nav>
@@ -48,11 +54,12 @@ function App() {
               <h2 className={"text-5xl py-2 text-teal-600 font-medium"}>Sachintha Dilshan</h2>
               <h3 className={"text-2xl py-2 text-white"}>Software Engineer</h3>
               <p className={"text-md py-5 leading-8 text-white "}>
-                I’m a self-motivated, forward-looking fresh graduate specialised in statistics and computer
-                science streams, from University of Colombo and University of Moratuwa. I’m very much
+                I’m a self-motivated, forward-looking graduate from University of Colombo and University of
+                Moratuwa with 9 months experience as a trainee Software Engineer.I’m very much
                 interested in software development, machine learning and data science domains. I do like
-                to explore new technologies and love learn while supporting others. I’m seeking for an
-                opportunity to prove my skills within the industry and improve my skills with
+                to explore new technologies and love learn while supporting others. I have background ,
+                knowledge and experience related to Data Science and software engineering domains. I'm
+                seeking an opportunity to thrive as an entry level Software Engineer.
                 <Typewriter
                     options={{
                       strings: ['the industry knowledge.'],
@@ -130,6 +137,25 @@ function App() {
             </div>
           </section>
 
+          <section>
+            <div className={"text-center my-4 "}>
+              <h3 className={"text-3xl text-white py-1"}> Experiences</h3>
+              <div className={"my-5"}>
+                <Experience props={{title:"Trainee Software Engineer - LSEG (Oct 2022 - April 2023)",description:"I have worked at LSEG from October 2022 to April 2023 as a trainee software engineer. I\n" +
+                      "                was exposed to java core, OOP concepts and data structures as a trainee. I\n" +
+                      "                was assigned to develop an exchange system using java core and socket programming.\n" +
+                      "                Further I could be able to participate some KT's regarding the architecture and the\n" +
+                      "                frameworks used by the LSEG."}}/>
+              </div>
+
+              <div className={"my-5"}>
+                <Experience props={{title:"Trainee Software Engineer - Seeker's Cloud (From May 2023)",description:"As a trainee, I was exposed to JavaSE (JavaFx, Spring), JavaScript (React, Angular),\n" +
+                      "TypeScript, MySql and Git. I could complete couple of projects and I have added the\n" +
+                      "details of these within the projects section"}}/>
+              </div>
+            </div>
+          </section>
+
           <section className={"w-full"}>
             <div className={"text-center  w-full"}>
               <h3 className={"text-3xl text-white py-1"}>Skill Highlights</h3>
@@ -139,14 +165,7 @@ function App() {
             </div>
           </section>
 
-          <section>
-            <div className={"text-center my-4"}>
-              <h3 className={"text-3xl text-white py-1"}> Experiences</h3>
-              <div className={"my-5"}>
-                <Experience/>
-              </div>
-            </div>
-          </section>
+
 
           <section>
             <div className={"text-center"}>
@@ -264,10 +283,8 @@ function App() {
 
           <section>
             <div className={"text-center my-4"}>
-              <h3 className={"text-3xl text-white py-1"}> Blog Article</h3>
-              <div className={"my-5"}>
-                fhfhf
-              </div>
+              <h3 className={"text-3xl text-white py-1"}> Blog Articles</h3>
+              <Blogs/>
             </div>
           </section>
 

@@ -2,7 +2,7 @@ import {Library} from "./Library";
 
 export const Language=({props})=>{
     return(
-       <div className={"border-solid border-2 border-orange-300 hover:scale-110 ransition duration-700"}>
+       <div className={"border-solid border-2 border-teal-300 hover:scale-105 ransition duration-700"}>
            <div>
                <img src={props.image} className={"w-[100px] h-[100px] mx-auto my-2"} alt={"language"}/>
            </div>

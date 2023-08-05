@@ -22,7 +22,7 @@ export const Project=({props})=>{
     };
 
     return(
-        <div className={"border-solid h-[375px] border-2 border-orange-300 hover:bg-slate-800 hover:scale-110 transition duration-700"}>
+        <div className={"border-solid h-[375px] border-2 border-teal-300 hover:bg-slate-800 hover:scale-105 transition duration-700"}>
             <div>
                 <img src={props.image} className={"w-[100px] h-[100px] mx-auto my-2"} alt={"project"}/>
             </div>

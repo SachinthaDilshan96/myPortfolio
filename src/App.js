@@ -218,6 +218,17 @@ function App() {
 
                       <Grid item xs={12} md={4}>
                         <Project props={{
+                          title:"SuperMarket App - A simple pos system with java swing",
+                          image:require("./resources/java.png"),
+                          languages:['Java','JavaSwing','MySql','OOP','MVC','JDBC'],
+                          description:"This project was done by using JavaSwing and Mysql. The MVC achitecture was followed to construct the project. The system has the ability to process customers, inventory and orders. ",
+                          links:{
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/SuperMarket.git"},
+                        }}/>
+                      </Grid>
+
+                      <Grid item xs={12} md={4}>
+                        <Project props={{
                           title:"Predicting COVID-19 using ML and implement it as a mobile app.",
                           image:require("./resources/python.png"),
                           languages:['JS','ReactNative','Python','ML','MobileApp'],

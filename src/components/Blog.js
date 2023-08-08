@@ -1,8 +1,6 @@
 
 export const Blog=({props})=>{
-    const handleClick = () => {
-        window.location.replace('https://bobbyhadz.com');
-    };
+
     return(
         <div
             onClick={ window.open('https://www.google.com', '_blank')}

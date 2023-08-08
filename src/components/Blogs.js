@@ -19,6 +19,13 @@ export const Blogs = () => {
                         img:require("../resources/java.png"),
                         desc:'Types of variables and data types are two different things in java. In this article I’ll be explaining the types'}}/>
                 </Grid>
+                <Grid item xs={12} md={6}>
+                    <Blog props={{
+                        title: 'Types of Variables in Java',
+                        link:"https://medium.com/@sachinthadilshan96/data-types-in-java-d92b4bb83f2e",
+                        img:require("../resources/java.png"),
+                        desc:'Java is a strongly typed and statically typed language. Which means conversions between unrelated data types are not allowed and type checking are done'}}/>
+                </Grid>
             </Grid>
         </Box>
     )

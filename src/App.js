@@ -218,12 +218,14 @@ function App() {
 
                       <Grid item xs={12} md={4}>
                         <Project props={{
-                          title:"SuperMarket App - A simple pos system with java swing",
+                          title:"Super Market App - A simple POS system using the Layered Architecture",
                           image:require("./resources/java.png"),
-                          languages:['Java','JavaSwing','MySql','OOP','MVC','JDBC'],
-                          description:"This project was done by using JavaSwing and Mysql. The MVC achitecture was followed to construct the project. The system has the ability to process customers, inventory and orders. ",
+                          languages:['Java','JavaSwing','MySql','OOP','Layered Architecture','JDBC'],
+                          description:"This project was implemented using Java and MySql database. The System's UI was developed using Java Swing and MySql " +
+                              "was used as the database. OOP concepts and SOLID principles were applied where necessary. Layered architecture was used in " +
+                              "the project and CRUD operations for customers, items and orders were implemented.",
                           links:{
-                            "GIT Repo":"https://github.com/SachinthaDilshan96/SuperMarket.git"},
+                            "GIT Repo":"https://github.com/SachinthaDilshan96/supermarket-layered.git"},
                         }}/>
                       </Grid>
 

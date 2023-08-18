@@ -220,7 +220,7 @@ function App() {
                         <Project props={{
                           title:"Super Market App - A simple POS system using the Layered Architecture",
                           image:require("./resources/java.png"),
-                          languages:['Java','JavaSwing','MySql','OOP','Layered Architecture','JDBC'],
+                          languages:['Java','JavaSwing','MySql','OOP','Layered-Architecture','JDBC'],
                           description:"This project was implemented using Java and MySql database. The System's UI was developed using Java Swing and MySql " +
                               "was used as the database. OOP concepts and SOLID principles were applied where necessary. Layered architecture was used in " +
                               "the project and CRUD operations for customers, items and orders were implemented.",

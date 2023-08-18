@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18e42fcb-1d7b-41dd-8628-032a4a982b67" name="Changes" comment="unnecessary files removed">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="18e42fcb-1d7b-41dd-8628-032a4a982b67" name="Changes" comment="unnecessary files removed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +106,7 @@
       <workItem from="1691421546720" duration="280000" />
       <workItem from="1691469638568" duration="726000" />
       <workItem from="1691470760594" duration="2054000" />
+      <workItem from="1692361844325" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="unnecessary files removed">
       <created>1689172199619</created>

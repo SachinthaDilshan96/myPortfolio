@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.7b6d7563.css",
+    "main.js": "/myPortfolio/static/js/main.fc72ddc7.js",
+    "static/js/787.1f11dfe9.chunk.js": "/myPortfolio/static/js/787.1f11dfe9.chunk.js",
+    "static/media/uoc.png": "/myPortfolio/static/media/uoc.2deaf698b11f2d7c1c21.png",
+    "static/media/moratuwa.png": "/myPortfolio/static/media/moratuwa.0f5003825c5c381ce1bb.png",
+    "static/media/SachinthaDilshan_CV.pdf": "/myPortfolio/static/media/SachinthaDilshan_CV.cb5adf9d04430adf50fa.pdf",
+    "static/media/java.png": "/myPortfolio/static/media/java.fdabd4e11f1235e4e8e0.png",
+    "static/media/User.png": "/myPortfolio/static/media/User.991cf7bdb89af4c2d1da.png",
+    "static/media/git.png": "/myPortfolio/static/media/git.faccfae3c97596fcb27e.png",
+    "static/media/react.png": "/myPortfolio/static/media/react.44319306359c7112276d.png",
+    "index.html": "/myPortfolio/index.html",
+    "main.7b6d7563.css.map": "/myPortfolio/static/css/main.7b6d7563.css.map",
+    "main.fc72ddc7.js.map": "/myPortfolio/static/js/main.fc72ddc7.js.map",
+    "787.1f11dfe9.chunk.js.map": "/myPortfolio/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b6d7563.css",
+    "static/js/main.fc72ddc7.js"
+  ]
+}
